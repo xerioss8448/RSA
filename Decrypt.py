@@ -10,8 +10,7 @@ i = (p-1)*(q-1)
 d = pow(e, -1, i)
 
 def decrypt(me):
-    en = math.pow(me,d)
-    c = en % n
+    m = pow(me,d,n)
     print("Decrypted Message is: ", c)
     return c
 

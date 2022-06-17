@@ -9,8 +9,7 @@ e = 3
 n = p*q
  
 def encrypt(me):
-    en = math.pow(me,e)
-    c = en % n
+    m = pow(me,e,n)
     print("Encrypted Message is: ", c)
     return c
  
